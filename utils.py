@@ -36,7 +36,7 @@ def save_employees(employees):
 
 def load_employees():
     """Load employees from JSON file, returning a list of Employee objects."""
-    from employee_manager import Employee
+    from employee import Employee
 
     if not os.path.exists(DATA_FILE):
         return []

@@ -12,5 +12,12 @@
         "employee_age": 36,
         "employee_department": "Maths",
         "employee_salary": 10000
+    },
+    {
+        "employee_id": 3,
+        "employee_name": "Khan",
+        "employee_age": 30,
+        "employee_department": "Python",
+        "employee_salary": 5000
     }
 ]
