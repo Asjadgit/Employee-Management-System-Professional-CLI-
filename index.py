@@ -1,4 +1,3 @@
-from employee_manager import enter_employee_details, show_all_employees
 import employee_manager
 from utils import get_non_empty_input, load_employees
 
@@ -30,6 +29,11 @@ while True:
     choice = get_non_empty_input("Choice: ")
 
     if choice == "1":
-        enter_employee_details()
+        employee_manager.enter_employee_details()
     elif choice == "2":
-        show_all_employees()
+        employee_manager.show_all_employees()
+    elif choice == "3":
+        employee_manager.search_employee()
+    elif choice == "9":
+        print("Goodbye!")
+        break

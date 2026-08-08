@@ -1,14 +1,16 @@
 class Employee:
-    def __init__(self, employee_id, employee_name, employee_age, employee_department, employee_salary):
+    def __init__(self, employee_id, employee_name, employee_age, employee_department, employee_salary, employee_skills):
         self.employee_id          = employee_id
         self.employee_name        = employee_name
         self.employee_age         = employee_age
         self.employee_department  = employee_department
-        self.salary      = employee_salary
+        self.salary               = employee_salary
+        self.employee_skills      = employee_skills or []
 
     @property
     def salary(self):
         return self.__salary
+
     @salary.setter
     def salary(self, value):
         if value < 0:
@@ -24,7 +26,8 @@ class Employee:
             "employee_name"       : self.employee_name,
             "employee_age"        : self.employee_age,
             "employee_department" : self.employee_department,
-            "employee_salary"     : self.salary
+            "employee_salary"     : self.salary,
+            "employee_skills"     : self.employee_skills
         }
 
     @classmethod
@@ -34,7 +37,8 @@ class Employee:
             data["employee_name"],
             data["employee_age"],
             data["employee_department"],
-            data["employee_salary"]
+            data["employee_salary"],
+            data["employee_skills"]
         )
 
 
@@ -45,3 +49,4 @@ class Employee:
         print(f"Age            :    {self.employee_age} ")
         print(f"Department     :    {self.employee_department} ")
         print(f"Salary         :    {self.salary} ")
+        print(f"Skills         :    {', '.join(self.employee_skills)} ")

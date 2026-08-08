@@ -42,5 +42,9 @@ def load_employees():
         return []
 
     with open(DATA_FILE, "r") as f:
-        data = json.load(f)
+        try:
+            data = json.load(f)
+        except json.JSONDecodeError:
+            return []
+
     return [Employee.from_dict(item) for item in data]

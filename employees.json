@@ -1,23 +1,21 @@
 [
     {
         "employee_id": 1,
-        "employee_name": "Asjad",
+        "employee_name": "Asjd",
         "employee_age": 26,
-        "employee_department": "Computer Science",
-        "employee_salary": 9000
+        "employee_department": "CS",
+        "employee_salary": 9000,
+        "employee_skills": []
     },
     {
         "employee_id": 2,
         "employee_name": "Javed",
         "employee_age": 36,
-        "employee_department": "Maths",
-        "employee_salary": 10000
-    },
-    {
-        "employee_id": 3,
-        "employee_name": "Khan",
-        "employee_age": 30,
-        "employee_department": "Python",
-        "employee_salary": 5000
+        "employee_department": "IT",
+        "employee_salary": 9000,
+        "employee_skills": [
+            "vue js",
+            "react js"
+        ]
     }
 ]
