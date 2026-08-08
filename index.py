@@ -16,11 +16,7 @@ def show_menu():
 
     print("6. Show Statistics")
 
-    print("7. Save Data")
-
-    print("8. Load Data")
-
-    print("9. Exit")
+    print("7. Exit")
 
 employee_manager.employees = load_employees()
 
@@ -34,6 +30,10 @@ while True:
         employee_manager.show_all_employees()
     elif choice == "3":
         employee_manager.search_employee()
-    elif choice == "9":
+    elif choice == "4":
+        employee_manager.update_employee_details()
+    elif choice == "5":
+            employee_manager.delete_employee()
+    elif choice == "7":
         print("Goodbye!")
         break

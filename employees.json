@@ -1,13 +1,5 @@
 [
     {
-        "employee_id": 1,
-        "employee_name": "Asjd",
-        "employee_age": 26,
-        "employee_department": "CS",
-        "employee_salary": 9000,
-        "employee_skills": []
-    },
-    {
         "employee_id": 2,
         "employee_name": "Javed",
         "employee_age": 36,
