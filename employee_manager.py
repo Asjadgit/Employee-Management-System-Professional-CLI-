@@ -145,3 +145,35 @@ def delete_employee():
 
     if not found:       
             print("No Employee Found with searched id")
+
+
+def statistics():
+    if not employees:
+        print("No employees added yet.")
+        return
+
+    print("========== Employee Statistics ==========")
+    total_employees = len(employees)
+
+    print(f"Total Employees : {total_employees}")
+
+    salaries = [employee.salary for employee in employees]
+    # print(f"salaries {salaries}")
+    avarage_salary = sum(salaries)/total_employees
+    print(f"Average Salary {avarage_salary}")
+
+    highest_salary = max(salaries)
+    lowest_salary  = min(salaries)
+
+    print(f"Highest Salary {highest_salary}")
+    print(f"Lowest Salary {lowest_salary}")
+
+    print("\nDepartments")
+    department_counts = {}
+
+    for emp in employees:
+        dept = emp.employee_department
+        department_counts[dept] = department_counts.get(dept, 0) + 1
+
+    for dept, count in department_counts.items():
+         print(f"  {dept:<20} : {count}")

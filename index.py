@@ -34,6 +34,8 @@ while True:
         employee_manager.update_employee_details()
     elif choice == "5":
             employee_manager.delete_employee()
+    elif choice == "6":
+        employee_manager.statistics()
     elif choice == "7":
         print("Goodbye!")
         break

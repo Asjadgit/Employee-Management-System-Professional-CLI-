@@ -9,5 +9,41 @@
             "vue js",
             "react js"
         ]
+    },
+    {
+        "employee_id": 3,
+        "employee_name": "Khan",
+        "employee_age": 20,
+        "employee_department": "CS",
+        "employee_salary": 9000,
+        "employee_skills": [
+            "typing",
+            "coding"
+        ]
+    },
+    {
+        "employee_id": 4,
+        "employee_name": "Zeeshan",
+        "employee_age": 20,
+        "employee_department": "IT",
+        "employee_salary": 10000,
+        "employee_skills": [
+            "html",
+            "css",
+            "js",
+            "php"
+        ]
+    },
+    {
+        "employee_id": 5,
+        "employee_name": "Asjad",
+        "employee_age": 26,
+        "employee_department": "Software",
+        "employee_salary": 15000,
+        "employee_skills": [
+            "Laravel",
+            "PHP",
+            "Vue js"
+        ]
     }
 ]
